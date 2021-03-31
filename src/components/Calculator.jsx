@@ -4,6 +4,8 @@ import FunctionButton from './FunctionButton';
 import Display from './Display';
 import AppProvider from './AppProvider';
 import EqualButton from './EqualButton';
+import ClearButton from './ClearButton';
+import NegativeButton from './NegativeButton';
 
 export default () => (
   <AppProvider>
@@ -11,6 +13,8 @@ export default () => (
       <Display />
     </div>
     <div className="num-pad">
+      <ClearButton />
+      <NegativeButton />
       <FunctionButton value="/" />
       <NumberButton value={7} />
       <NumberButton value={8} />
