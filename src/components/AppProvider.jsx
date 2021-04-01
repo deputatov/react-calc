@@ -49,6 +49,12 @@ export default ({ children }) => {
     }
   };
 
+  const handleBackButton = () => {
+    if (number !== '') {
+      setNumber((prev) => prev.slice(0, prev.length - 1));
+    }
+  };
+
   const doMath = () => {
     if (number && storedNumber) {
       switch (functionType) {
@@ -81,6 +87,7 @@ export default ({ children }) => {
         handleSetCalcFunction,
         handleClearValue,
         handleToggleNegative,
+        handleBackButton,
         doMath,
       }}
     >

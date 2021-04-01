@@ -6,6 +6,7 @@ import AppProvider from './AppProvider';
 import EqualButton from './EqualButton';
 import ClearButton from './ClearButton';
 import NegativeButton from './NegativeButton';
+import BackButton from './BackButton';
 
 export default () => (
   <AppProvider>
@@ -15,6 +16,7 @@ export default () => (
     <div className="num-pad">
       <ClearButton />
       <NegativeButton />
+      <BackButton />
       <FunctionButton value="/" />
       <NumberButton value={7} />
       <NumberButton value={8} />
