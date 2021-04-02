@@ -59,16 +59,16 @@ export default ({ children }) => {
     if (number && storedNumber) {
       switch (functionType) {
         case '+':
-          setStoredNumber(`${Math.round(`${(parseFloat(storedNumber) + parseFloat(number)) * 100}`) / 100}`);
+          setStoredNumber(`${parseFloat(storedNumber) + parseFloat(number)}`);
           break;
         case '-':
-          setStoredNumber(`${Math.round(`${(parseFloat(storedNumber) - parseFloat(number)) * 1000}`) / 1000}`);
+          setStoredNumber(`${parseFloat(storedNumber) - parseFloat(number)}`);
           break;
         case '/':
-          setStoredNumber(`${Math.round(`${(parseFloat(storedNumber) / parseFloat(number)) * 1000}`) / 1000}`);
+          setStoredNumber(`${parseFloat(storedNumber) / parseFloat(number)}`);
           break;
         case '*':
-          setStoredNumber(`${Math.round(`${parseFloat(storedNumber) * parseFloat(number) * 1000}`) / 1000}`);
+          setStoredNumber(`${parseFloat(storedNumber) * parseFloat(number)}`);
           break;
         default:
           break;
