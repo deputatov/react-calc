@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const CalculatorStyles = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  display: grid;
+  // width: 100%;
+  // min-height: 100vh;
+  // display: grid;
   .num-pad {
     /* grid-area: numbers; */
     display: grid;
